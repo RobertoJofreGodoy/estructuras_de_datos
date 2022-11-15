@@ -1,8 +1,12 @@
-# Algoritmos
+# Estructuras de datos
 
 ## Memoria
 
 Toda la información que guardas o corres en un pc funciona a base de 0 y 1, a esto se le llama codigo binario. En la memoria de tu pc, se almacena la información en forma de 0 y 1, y para poder acceder a ella, se utiliza una dirección, que es un número que representa la posición en la memoria. Por ejemplo, si tienes un número de 8 bits, puedes almacenar 256 números, y cada uno de ellos tiene una dirección, que va desde 0 hasta 255. Si tienes un número de 16 bits, puedes almacenar 65536 números, y cada uno de ellos tiene una dirección, que va desde 0 hasta 65535. Y asi sucesivamente.
+
+Existen diferentes estructuras de datos, cada una con sus ventajas y desventajas, y cada una con su uso específico.
+
+Pero lo que hay que comprender, es que las **diferentes estructuras de datos se almacenan de forma diferente en la memoria**, por lo tanto, se accede a ellas de forma distinta, y debes conocerlas para saber en que situación utilizar cada una.
 
 ### Abstracción
 
@@ -17,12 +21,6 @@ Pero aún así es necesario saber como funciona la memoria, ya que si no sabes c
 La cota superior asintótica (**Big-o**) es una forma de medir la complejidad de un algoritmo, se utiliza para comparar diferentes algoritmos y saber cual deberías utilizar para un problema en concreto.
 
 Es bastante importante comprender bien este concepto, ya que marca la diferencia entre solo programar y programar sabiendo lo que haces.
-
-## Estructuras de datos
-
-Existen diferentes estructuras de datos, cada una con sus ventajas y desventajas, y cada una con su uso específico.
-
-Pero lo que hay que comprender, es que las **diferentes estructuras de datos se almacenan de forma diferente en la memoria**, por lo tanto, se accede a ellas de forma distinta, y debes conocerlas para saber en que situación utilizar cada una.
 
 ### Hash table
 
