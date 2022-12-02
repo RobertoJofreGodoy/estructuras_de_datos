@@ -208,7 +208,7 @@ class LinkedList {
 }
 ```
 
-Para inicializar esta linkedList el head siempre debe ser nulo, ya que todavía no se ha almacenado ningún valor
+Para inicializar esta **linkedList** el head siempre debe ser nulo, ya que todavía no se ha almacenado ningún valor
 
 Con esto podemos crear una lista enlazada con el método **add()**, que añade un nuevo nodo al final de la lista.
 
@@ -253,7 +253,7 @@ Esto está representado en el siguiente diagrama:
  [5][6][7]   [8] // nodos hoja
 ```
 
-Esta estructura está conformada por nodos al igual que las listas enlazadas, pero en este caso cada nodo tiene un valor y un array de nodos hijos.
+Esta estructura está conformada por nodos al igual que las listas enlazadas, pero en este caso **cada nodo tiene un valor y un array de nodos hijos**.
 
 #### términos
 
@@ -289,10 +289,10 @@ Veamos el siguiente ejemplo:
  [5][6][7]   [8]
 ```
 
-Si utilizamos el algoritmo **Pre-order** el orden de los nodos visitados sería: 1, 2, 5, 6, 7, 3, 4, 8. Ya que se parte desde la raiz y se visitan los nodos hijos partiendo por los hijos de la izquierda.
+Si utilizamos el algoritmo **Pre-order** el orden de los nodos visitados sería: *1, 2, 5, 6, 7, 3, 4, 8*. Ya que se parte desde la raiz y se visitan los nodos hijos partiendo por los hijos de la izquierda.
 Partimos por la raíz [1], vamos al hijo izquierdo [2], que a su vez tiene más hijos [5] [6] [7] que recorremos de izquierda a derecha, después vamos al nodo derecho [3], que no tiene hijos, y por último vamos al nodo derecho [4], que tiene un hijo [8].
 
-Si utilizamos el algoritmo **Post-order** el orden de los nodos visitados sería: 5, 6, 7, 2, 3, 8, 4, 1. Ya que se parte desde el nodo hijo de más a la izquierda, y se recorren todos los nodos hijos de izquierda a derecha, y después se visita el nodo padre.
+Si utilizamos el algoritmo **Post-order** el orden de los nodos visitados sería: *5, 6, 7, 2, 3, 8, 4, 1*. Ya que se parte desde el nodo hijo de más a la izquierda, y se recorren todos los nodos hijos de izquierda a derecha, y después se visita el nodo padre.
 Partimos por el nodo hijo de más a la izquierda [5], que no tiene hijos, después vamos al nodo hermano [6], que tampoco tiene hijos, y por último vamos al nodo hermano [7], que tampoco tiene hijos, después vamos al nodo padre [2], que tiene un hermano [3] que tampoco tiene hijos, pero aquí vamos al nodo [8] (no al nodo [4] que es el hermano de [3]), ya que si un nodo tiene hijos, se recorren todos los hijos antes de visitar el nodo padre, por lo que ahora vamos al nodo padre [4], y por último vamos al nodo raiz [1].
 
 ##### Recorrer por nivel - Breadth First Search (BFS)
@@ -311,7 +311,7 @@ Veamos el siguiente ejemplo:
  [5][6][7]   [8]
 ```
 
-El orden de los nodos visitados sería: 1, 2, 3, 4, 5, 6, 7, 8. Ya que se parte desde la raiz y se visitan los nodos hijos partiendo por los hijos de la izquierda.
+El orden de los nodos visitados sería: *1, 2, 3, 4, 5, 6, 7, 8*. Ya que se parte desde la raiz y se visitan los nodos hijos partiendo por los hijos de la izquierda.
 
 #### Arbol en Javascript
 
@@ -461,7 +461,7 @@ Ambos algoritmos devuelven el mismo resultado **1, 2, 3, 4, 5, 6, 7, 8**
 
 ### Arbol Binario o Binary Tree
 
-Un árbol binario es un árbol en el que cada nodo tiene como máximo dos hijos. Los hijos se denominan hijo izquierdo e hijo derecho.
+**Un árbol binario es un árbol en el que cada nodo tiene como máximo dos hijos**. Los hijos se denominan hijo izquierdo e hijo derecho.
 
 Las aplicaciones de estos Binary Trees son muy variadas, por ejemplo, se utilizan en las tablas de enrutamiento por IP, también son utilizadas para realizar evaluación de expresiones, y en muchos casos también se utilizan para compresión de datos, como por ejemplo en el algoritmo de Huffman.
 
@@ -485,7 +485,7 @@ A diferencia de un arbol normal, aqui tenemos una forma extra de recorrer el arb
   2. **Post-order**: Primero visitamos el hijo izquierdo, luego el hijo derecho y luego el nodo. El resultado sería: **3, 4, 5, 7, 2**.
   3. **In-order**: Primero visitamos el hijo izquierdo, luego el nodo y luego el hijo derecho. El resultado sería: **3, 5, 4, 2, 7**.
 
-El algoritmo **In-Order** se utiliza exclusivamente en árboles binarios de búsqueda (Binary Trees).
+**El algoritmo *In-Order* se utiliza exclusivamente en árboles binarios (Binary Trees)**.
 
 #### Recorrido Arbol Binario en anchura (Breadth First Search)
 
@@ -605,7 +605,7 @@ const inOrder = (node) => {
 }
 ```
 
-Por último, vamos a ver Ir-order, que es el algoritmo que se utiliza exclusivamente en árboles binarios.
+Por último, vamos a ver **In-order**, que es el algoritmo que **se utiliza exclusivamente en árboles binarios.**
 
 Con esta función recursiva lo que hacemos es acceder primero al hijo izquierdo más profundo [3], luego al padre [5], después a su hermano derecho [4], luego al nodo raiz [2] y por ultimo a su hermano derecho [7].
 
@@ -754,7 +754,7 @@ Veamos el siguiente grafo:
 
 #### Matriz de Adyacencia
 
-Una **Matriz de Adyacencia** es una matriz bidimensional, donde cada fila y columna representa un nodo, y cada celda representa una arista entre dos nodos. Si la celda tiene un 1, significa que hay una arista entre los dos nodos, y si la celda tiene un 0, significa que no hay una arista entre los dos nodos.
+Una **Matriz de Adyacencia** es una matriz bidimensional, dónde cada fila y columna representa un nodo, y cada celda representa una arista entre dos nodos. Si la celda tiene un 1, significa que hay una arista entre los dos nodos, y si la celda tiene un 0, significa que no hay una arista entre los dos nodos.
 
 En el ejemplo anterior, la matriz de adyacencia sería la siguiente:
 
@@ -841,7 +841,7 @@ MatrixGraph {
 }
 ```
 
-Para verlo más graficamente aún sería así:
+Para verlo más graficamente aún, sería así:
 
 ```js
   A B C D E
